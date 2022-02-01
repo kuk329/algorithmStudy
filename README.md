@@ -13,3 +13,29 @@ console.log(str_repeat); // hellohellohello
 
 
 ```
+
+
+
+### string.split(separator, limit) 함수 : 문자열을 일정한 구분자로 작라서 배열로 저장한다.
+
+```javascript
+// ex.
+const str ="hello new world";
+const arr = str.split(" ");
+console.log(arr.length); // 3
+
+console.log(arr[0]); // hello
+console.log(arr[1]); // new
+console.log(arr[2]); // world
+
+
+// split("") 이렇게 자르면 공백까지 배열에 저장된다.
+
+// limit 사용
+const arr2 = str.split(" ",2);
+console.log(arr2.length); // 2
+
+console.log(arr2[0]); // hello
+console.log(arr2[1]); // new
+
+```
