@@ -55,3 +55,26 @@ const sum = numbers.reduce((accumulator, currentNumber) => accumulator + current
 
 
 ```
+
+
+### join() 메서드는 배열의 모든 요소를 연결해 하나의 문자열로 만든다.
+
+
+```javascript
+
+array.join([separator])
+separator: 배열의 요소를 구분할 문자열을 지정한다. 생략하면 쉼표로 구분된다.
+반환값: 배열의 모든 요소를 연결한 하나의 문자열을 반환한다. (원본 배열은 그대로)
+
+const arr = ['apple', 'banana', 'peach'];
+console.log(arr.join());     // "apple,banana,peach"
+console.log(arr.join(' '));   // "apple banana peach"
+console.log(arr.join(''));    // "applebananapeach"
+console.log(arr.join('&'));   // "apple&banana&peach"
+
+
+```
+
+
+
+
